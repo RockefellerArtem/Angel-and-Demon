@@ -796,6 +796,10 @@ PrefabInstance:
       propertyPath: _door
       value: 
       objectReference: {fileID: 72613798}
+    - target: {fileID: 2036578119261078178, guid: 5685aad2923b9704490aceecdd18f9e7, type: 3}
+      propertyPath: _rotationAngle
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2036578119261078202, guid: 5685aad2923b9704490aceecdd18f9e7, type: 3}
       propertyPath: m_Name
       value: Lever
@@ -806,7 +810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2036578119261078203, guid: 5685aad2923b9704490aceecdd18f9e7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.054
+      value: -2.05
       objectReference: {fileID: 0}
     - target: {fileID: 2036578119261078203, guid: 5685aad2923b9704490aceecdd18f9e7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -867,7 +871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3520518082077185435, guid: 1d8c4c2015ef09747bf3202ad694d6d0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.0458686
+      value: -2.0418687
       objectReference: {fileID: 0}
     - target: {fileID: 3520518082077185435, guid: 1d8c4c2015ef09747bf3202ad694d6d0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -923,8 +927,12 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4758124019569744325, guid: fed78e860b926d04a846b063093626b8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2523
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758124019569744325, guid: fed78e860b926d04a846b063093626b8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.6249857
+      value: -5.624986
       objectReference: {fileID: 0}
     - target: {fileID: 4758124019569744325, guid: fed78e860b926d04a846b063093626b8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -960,6 +968,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4758124019569744325, guid: fed78e860b926d04a846b063093626b8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758124019569744328, guid: fed78e860b926d04a846b063093626b8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758124019569744328, guid: fed78e860b926d04a846b063093626b8, type: 3}
+      propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
