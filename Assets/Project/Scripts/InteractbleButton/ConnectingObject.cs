@@ -12,6 +12,8 @@ public class ConnectingObject : MonoBehaviour
     {
         _yOpen = transform.localScale.y;
         _yClose = transform.localScale.y + _height;
+
+        StartCoroutine(ScaleY(_yOpen, _yClose));
     }
 
     public void OnButtonDisable()
