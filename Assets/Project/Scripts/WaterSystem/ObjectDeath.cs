@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class ObjectDeath : MonoBehaviour
 {
+    public string _scene;
+
     private string _tag;
 
     private void Start()
@@ -21,6 +23,6 @@ public class ObjectDeath : MonoBehaviour
 
     private void CharacterDeath()
     {
-        SceneManager.LoadScene("_Aleksandr");
+        SceneManager.LoadScene(_scene);
     }
 }

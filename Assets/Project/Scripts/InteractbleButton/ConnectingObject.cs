@@ -1,10 +1,8 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class ConnectingObject : MonoBehaviour
 {
-    [SerializeField] Button _button;
     [SerializeField] float _height;
     [SerializeField] float _time;
 
@@ -15,11 +13,10 @@ public class ConnectingObject : MonoBehaviour
         _yOpen = transform.localScale.y;
         _yClose = transform.localScale.y + _height;
 
-        _button.OnButtonActivate += OnButtonActivate;
-        _button.OnButtonDisable += OnButtonDisable;
+        StartCoroutine(ScaleY(_yOpen, _yClose));
     }
 
-    private void OnButtonDisable()
+    public void OnButtonDisable()
     {
         StartCoroutine(ScaleY(_yClose, _yOpen));
     }
