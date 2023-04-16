@@ -88,7 +88,7 @@ public class LevelManager : SingletonMono<LevelManager>
         WindowManager.Instance.HandleCurrentActiveWindow(Window.Game);
     }
 
-    private void OnHandleExitLevel(LevelHandler levelHandler)
+    public void OnHandleExitLevel(LevelHandler levelHandler)
     {
         WindowManager.Instance.HandleCurrentActiveWindow(Window.Menu);
         _currentLevelHandler = null;
