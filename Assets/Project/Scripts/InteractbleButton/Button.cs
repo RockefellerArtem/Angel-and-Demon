@@ -23,7 +23,9 @@ public class Button : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (_isMoving) return;
-        StartCoroutine(Move(_upPosition, _downPosition));
+        if (collision.gameObject.TryGetComponent(out IgnoreButton _)) return;
+
+        StartCoroutine(Move(transform.position, _downPosition));
 
         foreach(var action in _onButtonEnable)
         {
@@ -34,7 +36,9 @@ public class Button : MonoBehaviour
     public void OnCollisionExit2D(Collision2D collision)
     {
         if (_isMoving) return;
-        StartCoroutine(Move(_downPosition, _upPosition));
+        if (collision.gameObject.TryGetComponent(out IgnoreButton _)) return;
+
+        StartCoroutine(Move(transform.position, _upPosition));
 
         foreach (var action in _onButtonDisable)
         {
