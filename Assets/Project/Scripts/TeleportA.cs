@@ -9,6 +9,9 @@ public class TeleportA : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        OnHandlerExit?.Invoke();
+        if (other.gameObject.CompareTag("Player"))
+        {
+            OnHandlerExit?.Invoke();
+        }
     }
 }
