@@ -13,4 +13,5 @@ public class TeleportB : MonoBehaviour
     {
         _coordinate = transform.position;
     }
+    
 }

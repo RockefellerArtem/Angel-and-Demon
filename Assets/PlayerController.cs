@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,8 +15,26 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform _groundCheck;
 
     [SerializeField] private Rigidbody2D _player;
+
+    [SerializeField] private GameObject _demon;
+    [SerializeField] private GameObject _angel;
+
+    [SerializeField] private SpriteRenderer _currentSprite;
+
+    [SerializeField] private TeleportController _teleportController;
     
     private float _timeJump;
+
+    private void OnEnable()
+    {
+        _teleportController.OnChangeImagePlayer += ChangeImage;
+    }
+
+    private void Start()
+    {
+        _demon.SetActive(true);
+        _angel.SetActive(false);
+    }
 
     private void Update()
     {
@@ -56,5 +76,11 @@ public class PlayerController : MonoBehaviour
                 _player.AddForce(Vector2.up * _jumpHeight, ForceMode2D.Impulse);
             }
         }
+    }
+    
+    private void ChangeImage()
+    {
+        _demon.SetActive(false);
+        _angel.SetActive(true);
     }
 }
