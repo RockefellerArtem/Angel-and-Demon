@@ -272,8 +272,8 @@ MonoBehaviour:
   _isGrounded: 0
   _groundCheck: {fileID: 1601357117192344911}
   _player: {fileID: 1601357116501722635}
-  _demon: {fileID: 21300000, guid: e00697a27c93d8e47843539c8175b6e7, type: 3}
-  _angel: {fileID: 21300000, guid: 10ed7ac5394a8474e9e253d9aab4bca3, type: 3}
+  _demon: {fileID: 473509580}
+  _angel: {fileID: 1601357116366942965}
   _currentSprite: {fileID: 1601357116366942963}
   _teleportController: {fileID: 0}
 --- !u!114 &-2463730452464294730
