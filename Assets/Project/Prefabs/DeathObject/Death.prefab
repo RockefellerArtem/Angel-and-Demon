@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1878768073937634891}
   - component: {fileID: 1878768073937634890}
-  - component: {fileID: 1878768073937634889}
+  - component: {fileID: 6945785486039894850}
   m_Layer: 0
   m_Name: Death
   m_TagString: TriggerDeathAll
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 0.066037714, g: 0.059496243, b: 0.059496243, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 3d79731caa51f1d4b93cad142cf8f115, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &1878768073937634889
-PolygonCollider2D:
+--- !u!61 &6945785486039894850
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -101,15 +101,13 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.2, y: 0.88}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 0.5773587}
-      - {x: -0.5, y: -0.28866667}
-      - {x: 0.5, y: -0.28866667}
+  serializedVersion: 2
+  m_Size: {x: 7.2, y: 0.88}
+  m_EdgeRadius: 0

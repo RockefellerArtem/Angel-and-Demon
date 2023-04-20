@@ -180,6 +180,8 @@ GameObject:
   - component: {fileID: 1601357116501722632}
   - component: {fileID: 1601357116501722635}
   - component: {fileID: 1601357116501722646}
+  - component: {fileID: -2463730452464294730}
+  - component: {fileID: -2499934124796416105}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -274,6 +276,31 @@ MonoBehaviour:
   _angel: {fileID: 21300000, guid: 10ed7ac5394a8474e9e253d9aab4bca3, type: 3}
   _currentSprite: {fileID: 1601357116366942963}
   _teleportController: {fileID: 0}
+--- !u!114 &-2463730452464294730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601357116501722634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e36551ec8468cb4583417b7aa77fe75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scene: 
+--- !u!114 &-2499934124796416105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601357116501722634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7c708c5eb3d754da28f9e2864c34f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1601357117192344910
 GameObject:
   m_ObjectHideFlags: 0
