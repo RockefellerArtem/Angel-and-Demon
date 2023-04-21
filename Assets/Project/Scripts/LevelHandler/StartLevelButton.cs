@@ -41,7 +41,6 @@ public class StartLevelButton : MonoBehaviour
     }
     public void Init()
     {
-        Debug.Log("Init");
         _icon.sprite = _lockIcon;
         _counterCellLevelText.text = _indexLevel.ToString();
 

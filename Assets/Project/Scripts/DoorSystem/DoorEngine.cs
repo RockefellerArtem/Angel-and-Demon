@@ -17,8 +17,6 @@ public class DoorEngine : MonoBehaviour
 
     private void InteractElementsMechanics(bool isState)
     {
-        Debug.Log(isState);
-        
         if (isState)
         {
             _animatorDoor.ResetTrigger("Down");
