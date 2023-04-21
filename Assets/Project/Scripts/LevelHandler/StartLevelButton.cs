@@ -107,14 +107,14 @@ public class StartLevelButton : MonoBehaviour
     }
     private void HandlerClickButton()
     {
-//#if UNITY_EDITOR
-//        AdsController.Instance.ShowReward(() =>
-//        {
-//            UnLockLevel();
-//        });
-//        
-//        AdsController.Instance.ShowInterstitial();
-//#endif
+#if UNITY_EDITOR
+        AdsController.Instance.ShowReward(() =>
+        {
+            UnLockLevel();
+        });
+        
+        AdsController.Instance.ShowInterstitial();
+#endif
         
         OnClickLevelButton?.Invoke(_indexLevel);
 
