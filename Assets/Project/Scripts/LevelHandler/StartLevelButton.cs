@@ -41,6 +41,7 @@ public class StartLevelButton : MonoBehaviour
     }
     public void Init()
     {
+        Debug.Log("Init");
         _icon.sprite = _lockIcon;
         _counterCellLevelText.text = _indexLevel.ToString();
 
@@ -107,8 +108,24 @@ public class StartLevelButton : MonoBehaviour
     }
     private void HandlerClickButton()
     {
-        if (_isLock)
-        {
+//#if UNITY_EDITOR
+//        AdsController.Instance.ShowReward(() =>
+//        {
+//            UnLockLevel();
+//        });
+//        
+//        AdsController.Instance.ShowInterstitial();
+//#endif
+        
+        OnClickLevelButton?.Invoke(_indexLevel);
+
+        
+        
+        
+        
+        
+//        if (_isLock)
+//        {
 //            if (_isAdLevel)
 //            {
 //#if UNITY_EDITOR
@@ -120,10 +137,8 @@ public class StartLevelButton : MonoBehaviour
 //                });
 //#endif
 //            }
-            return;
-        }
+//        }
         //AdsController.Instance.ShowInterstitial();
-        OnClickLevelButton?.Invoke(_indexLevel);
     }
 
     #endregion
